@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		E972AE6E29F00D87003AD3FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972AE6D29F00D87003AD3FF /* AppDelegate.swift */; };
 		E972AE7029F00D87003AD3FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972AE6F29F00D87003AD3FF /* SceneDelegate.swift */; };
-		E972AE7229F00D87003AD3FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972AE7129F00D87003AD3FF /* ViewController.swift */; };
 		E972AE7529F00D87003AD3FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E972AE7329F00D87003AD3FF /* Main.storyboard */; };
 		E972AE7729F00D88003AD3FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E972AE7629F00D88003AD3FF /* Assets.xcassets */; };
 		E972AE7A29F00D88003AD3FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E972AE7829F00D88003AD3FF /* LaunchScreen.storyboard */; };
+		E972AE8229F00DA0003AD3FF /* JSONTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972AE8129F00DA0003AD3FF /* JSONTableViewController.swift */; };
+		E972AE8429F00DE9003AD3FF /* inner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972AE8329F00DE9003AD3FF /* inner.swift */; };
+		E972AE8629F02703003AD3FF /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972AE8529F02703003AD3FF /* ShowViewController.swift */; };
+		E972AE8929F02DB5003AD3FF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E972AE8829F02DB5003AD3FF /* Kingfisher */; };
+		E972AE8B29F02EBC003AD3FF /* JSONTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E972AE8A29F02EBC003AD3FF /* JSONTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E972AE6A29F00D87003AD3FF /* JSONOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E972AE6D29F00D87003AD3FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E972AE6F29F00D87003AD3FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E972AE7129F00D87003AD3FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E972AE7429F00D87003AD3FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E972AE7629F00D88003AD3FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E972AE7929F00D88003AD3FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E972AE7B29F00D88003AD3FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E972AE8129F00DA0003AD3FF /* JSONTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTableViewController.swift; sourceTree = "<group>"; };
+		E972AE8329F00DE9003AD3FF /* inner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inner.swift; sourceTree = "<group>"; };
+		E972AE8529F02703003AD3FF /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		E972AE8A29F02EBC003AD3FF /* JSONTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E972AE8929F02DB5003AD3FF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +66,11 @@
 			children = (
 				E972AE6D29F00D87003AD3FF /* AppDelegate.swift */,
 				E972AE6F29F00D87003AD3FF /* SceneDelegate.swift */,
-				E972AE7129F00D87003AD3FF /* ViewController.swift */,
+				E972AE8129F00DA0003AD3FF /* JSONTableViewController.swift */,
+				E972AE8A29F02EBC003AD3FF /* JSONTableViewCell.swift */,
 				E972AE7329F00D87003AD3FF /* Main.storyboard */,
+				E972AE8529F02703003AD3FF /* ShowViewController.swift */,
+				E972AE8329F00DE9003AD3FF /* inner.swift */,
 				E972AE7629F00D88003AD3FF /* Assets.xcassets */,
 				E972AE7829F00D88003AD3FF /* LaunchScreen.storyboard */,
 				E972AE7B29F00D88003AD3FF /* Info.plist */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = JSONOne;
+			packageProductDependencies = (
+				E972AE8829F02DB5003AD3FF /* Kingfisher */,
+			);
 			productName = JSONOne;
 			productReference = E972AE6A29F00D87003AD3FF /* JSONOne.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = E972AE6129F00D87003AD3FF;
+			packageReferences = (
+				E972AE8729F02DB4003AD3FF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = E972AE6B29F00D87003AD3FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E972AE7229F00D87003AD3FF /* ViewController.swift in Sources */,
+				E972AE8629F02703003AD3FF /* ShowViewController.swift in Sources */,
+				E972AE8429F00DE9003AD3FF /* inner.swift in Sources */,
 				E972AE6E29F00D87003AD3FF /* AppDelegate.swift in Sources */,
 				E972AE7029F00D87003AD3FF /* SceneDelegate.swift in Sources */,
+				E972AE8229F00DA0003AD3FF /* JSONTableViewController.swift in Sources */,
+				E972AE8B29F02EBC003AD3FF /* JSONTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E972AE8729F02DB4003AD3FF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E972AE8829F02DB5003AD3FF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E972AE8729F02DB4003AD3FF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E972AE6229F00D87003AD3FF /* Project object */;
 }
